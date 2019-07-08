@@ -1,8 +1,0 @@
-C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\BMDXKeysLib\bin\x64\Debug\BMDXKeysLib.dll
-C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\BMDXKeysLib\bin\x64\Debug\BMDXKeysLib.pdb
-C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\BMDXKeysLib\bin\x64\Debug\PIEHid64Net.dll
-C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\BMDXKeysLib\obj\x64\Debug\BMDXKeysLib.csprojAssemblyReference.cache
-C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\BMDXKeysLib\obj\x64\Debug\BMDXKeysLib.csproj.CoreCompileInputs.cache
-C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\BMDXKeysLib\obj\x64\Debug\BMDXKeysLib.csproj.CopyComplete
-C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\BMDXKeysLib\obj\x64\Debug\BMDXKeysLib.dll
-C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\BMDXKeysLib\obj\x64\Debug\BMDXKeysLib.pdb
