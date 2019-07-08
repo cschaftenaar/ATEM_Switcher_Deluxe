@@ -138,7 +138,7 @@ namespace ATEM_Switcher_Deluxe
                 {
                     for (int i = 1; i <= 64; i++)
                     {
-                        this.midi_BCF2000.MIDI_Send(ChannelCommand.NoteOn, 0, 0, i, 0);
+                        midi_BCF2000.MIDI_Send(ChannelCommand.NoteOn, 0, 0, i, 0);
                     }
                 }
 
