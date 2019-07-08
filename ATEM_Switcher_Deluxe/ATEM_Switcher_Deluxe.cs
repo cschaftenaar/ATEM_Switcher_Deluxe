@@ -56,7 +56,6 @@ namespace ATEM_Switcher_Deluxe
         public bool existMIDI;
         public bool existXKEYS;
 
-
         public Switcher sw;
         public XKeys_Controller XKeys;
         public BCF2000_MIDI_Controller midi_BCF2000;
