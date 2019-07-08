@@ -1,0 +1,11 @@
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\BMDSwitcherLib\Demos\bin\Debug\Demos.exe.config
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\BMDSwitcherLib\Demos\bin\Debug\Demos.exe
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\BMDSwitcherLib\Demos\bin\Debug\Demos.pdb
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\BMDSwitcherLib\Demos\bin\Debug\BMDSwitcherLib.dll
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\BMDSwitcherLib\Demos\bin\Debug\BMDSwitcherLib.pdb
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\BMDSwitcherLib\Demos\obj\Debug\Demos.csprojResolveAssemblyReference.cache
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\BMDSwitcherLib\Demos\obj\Debug\Demos.Form1.resources
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\BMDSwitcherLib\Demos\obj\Debug\Demos.Properties.Resources.resources
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\BMDSwitcherLib\Demos\obj\Debug\Demos.csproj.GenerateResource.Cache
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\BMDSwitcherLib\Demos\obj\Debug\Demos.exe
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\BMDSwitcherLib\Demos\obj\Debug\Demos.pdb

@@ -1,0 +1,12 @@
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Demo\SequencerDemo\bin\Debug\SequencerDemo.exe
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Demo\SequencerDemo\bin\Debug\SequencerDemo.pdb
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Demo\SequencerDemo\bin\Debug\Sanford.Multimedia.Midi.dll
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Demo\SequencerDemo\bin\Debug\Sanford.Multimedia.Midi.pdb
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Demo\SequencerDemo\bin\Debug\Sanford.Multimedia.Midi.xml
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Demo\SequencerDemo\obj\Debug\SequencerDemo.csprojResolveAssemblyReference.cache
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Demo\SequencerDemo\obj\Debug\SequencerDemo.AboutDialog.resources
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Demo\SequencerDemo\obj\Debug\SequencerDemo.Form1.resources
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Demo\SequencerDemo\obj\Debug\SequencerDemo.Properties.Resources.resources
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Demo\SequencerDemo\obj\Debug\SequencerDemo.csproj.GenerateResource.Cache
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Demo\SequencerDemo\obj\Debug\SequencerDemo.exe
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Demo\SequencerDemo\obj\Debug\SequencerDemo.pdb

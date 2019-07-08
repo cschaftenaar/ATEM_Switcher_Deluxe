@@ -1,0 +1,184 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 611, 434
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "C++ ShipDriver Demo"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Start",IDSTART,7,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,126,7,50,14
+    LISTBOX         ID_EVENTS,7,74,359,42,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Halt",IDHALT,66,7,50,14
+    LTEXT           "Data (hex):",IDC_STATIC,7,62,77,9
+    EDITTEXT        IDC_EDIT1,89,136,37,14,ES_AUTOHSCROLL
+    LTEXT           "Turn Speaker On or Off:",IDC_STATIC,230,125,89,9
+    LTEXT           "Write to LED Display:",IDC_STATIC,7,124,111,10
+    PUSHBUTTON      "Clear Listbox",IDC_CLEAR,296,53,69,18
+    PUSHBUTTON      "Write to Display",IDC_WriteDisplay,131,136,74,14
+    EDITTEXT        IDC_EDIT2,48,136,37,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,7,136,37,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Speaker On",IDC_SpeakerOn,230,136,74,14
+    PUSHBUTTON      "Speaker Off",IDC_SpeakerOff,310,136,74,14
+    PUSHBUTTON      "Start Cal",IDC_StartCal,7,171,74,14
+    PUSHBUTTON      "Save Cal",IDC_SaveCal,87,171,74,14
+    LTEXT           "Calibration:",IDC_STATIC,7,160,89,9
+    LTEXT           "Press Start Cal.  Move levers and switches over full range, leaving each in center.  Rotate wheel slowly two or three revoluations.  When all controls are centered press Save Cal.  After calibration values in bytes 11, 12, 18, 19, 20, 21 are calibrated.",IDC_STATIC,7,187,275,25
+    PUSHBUTTON      "Wheel",IDC_ShowWheel,7,231,40,14
+    PUSHBUTTON      "Lever 1",IDC_ShowLever1,53,231,36,14
+    LTEXT           "Show cal'ed values on LED Display:",IDC_STATIC,7,220,127,9
+    PUSHBUTTON      "Lever 2",IDC_ShowLever2,96,231,36,14
+    PUSHBUTTON      "Switch 1",IDC_ShowSw1,137,231,36,14
+    PUSHBUTTON      "Switch 2",IDC_ShowSw2,178,231,36,14
+    PUSHBUTTON      "Write Unit ID",IDC_WriteUnitID,7,266,50,14
+    LTEXT           "Write Unit ID:",IDC_STATIC,7,255,49,9
+    EDITTEXT        IDC_EDIT4,64,266,37,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Keyboard Reflector",IDC_KeyboardReflect,7,298,76,14
+    LTEXT           "Keyboard Reflector:",IDC_STATIC,7,288,127,9
+    PUSHBUTTON      "Joystick Reflector",IDC_JoystickReflect,7,335,76,14
+    LTEXT           "Joystick Reflector *note must have set to Analog Data Only:",IDC_STATIC,7,324,271,9
+    EDITTEXT        IDC_EDIT6,96,335,19,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,137,335,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,177,335,20,14,ES_AUTOHSCROLL
+    LTEXT           "X:",IDC_STATIC,87,337,8,9
+    LTEXT           "Y:",IDC_STATIC,127,338,8,9
+    LTEXT           "Z:",IDC_STATIC,167,338,8,9
+    EDITTEXT        IDC_EDIT9,224,335,19,14,ES_AUTOHSCROLL
+    LTEXT           "Z rot:",IDC_STATIC,206,337,17,9
+    EDITTEXT        IDC_EDIT10,266,335,19,14,ES_AUTOHSCROLL
+    LTEXT           "Slid:",IDC_STATIC,251,337,15,9
+    EDITTEXT        IDC_EDIT11,315,335,19,14,ES_AUTOHSCROLL
+    LTEXT           "Buttons:",IDC_STATIC,289,337,25,9
+    EDITTEXT        IDC_EDIT12,425,335,19,14,ES_AUTOHSCROLL
+    LTEXT           "Hat:",IDC_STATIC,410,337,15,9
+    PUSHBUTTON      "Analogs as Joystick (tiller)",IDC_ShipModeJoy,7,370,105,14
+    LTEXT           "Set Ship Mode:",IDC_STATIC,7,359,127,9
+    PUSHBUTTON      "Analog Data Only",IDC_ShipModeNone,7,402,105,14
+    PUSHBUTTON      "Descriptor",IDC_Descriptor,116,273,76,14
+    LTEXT           "Descriptor:",IDC_STATIC,116,261,46,9
+    EDITTEXT        IDC_EDIT13,338,335,19,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT14,360,335,19,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT15,383,335,19,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Analogs as Joystick (wheel)",IDC_ShipModeJoy3,7,386,105,14
+    EDITTEXT        IDC_EDIT5,188,386,37,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Wheel Sensitivity",IDC_WheelSens,117,386,66,14
+    PUSHBUTTON      "Zero Wheel",IDC_WheelZero,234,386,56,14
+    PUSHBUTTON      "Start My Joystick",IDC_StartMyJoystick,331,281,67,14
+    LTEXT           "Wheel:",IDC_STATIC,295,191,28,9
+    LTEXT           "Lever1:",IDC_STATIC,295,209,28,9
+    LTEXT           "Lever2:",IDC_STATIC,295,230,28,9
+    LTEXT           "Sw1:",IDC_STATIC,295,249,28,9
+    LTEXT           "Sw2:",IDC_STATIC,295,266,28,9
+    CONTROL         "+/-",IDC_CHKWHEEL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,411,188,27,13
+    CONTROL         "+/-",IDC_CHKLEVER1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,411,206,27,13
+    CONTROL         "+/-",IDC_CHKLEVER2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,411,226,27,13
+    CONTROL         "+/-",IDC_CHKSW1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,411,245,27,13
+    CONTROL         "+/-",IDC_CHKSW2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,411,263,27,13
+    CONTROL         "No Wrap",IDC_CHKNOWRAP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,440,188,46,13
+    PUSHBUTTON      "Center",IDC_Center,489,186,39,14
+    EDITTEXT        IDC_SENS,567,186,19,14,ES_AUTOHSCROLL
+    LTEXT           "Sensitivity:",IDC_STATIC,532,188,34,9
+    LTEXT           "Reassign Control-Ship Mode must be Analogs Data Only",IDC_STATIC,294,175,192,9
+    PUSHBUTTON      "Stop My Joystick",IDC_StopMyJoystick,405,281,67,14
+    LTEXT           "More Wheel Stuff",IDC_STATIC,403,44,67,9
+    LTEXT           "Wheel Direction",IDC_STATIC,405,60,62,9
+    LTEXT           "Position",IDC_STATIC,406,95,62,9
+    LTEXT           "Abs. Degrees",IDC_STATIC,405,77,62,9
+    EDITTEXT        IDC_EDIT16,461,74,37,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT17,461,57,74,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT18,461,90,37,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT19,188,369,37,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Tiller Sensitivity",IDC_TillerSens,117,369,66,14
+    PUSHBUTTON      "Macros On",IDC_MacrosOn,117,402,65,14
+    PUSHBUTTON      "Macros Off",IDC_MacrosOff,187,402,65,14
+    PUSHBUTTON      "Switches Deadzone",IDC_Deadzone,234,369,74,14
+    EDITTEXT        IDC_EDIT20,329,369,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT21,387,369,30,14,ES_AUTOHSCROLL
+    LTEXT           "Sw2:",IDC_STATIC,368,372,19,9
+    LTEXT           "Sw1:",IDC_STATIC,311,372,18,9
+    PUSHBUTTON      "Setup Callback",IDC_CALLBACK,7,38,112,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 604
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 427
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

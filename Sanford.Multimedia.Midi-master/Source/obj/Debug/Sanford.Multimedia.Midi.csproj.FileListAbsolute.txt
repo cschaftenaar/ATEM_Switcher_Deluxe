@@ -1,0 +1,90 @@
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\Debug\Sanford.Multimedia.Midi.XML
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\Debug\Sanford.Multimedia.Midi.dll
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\Debug\Sanford.Multimedia.Midi.pdb
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x86\Debug\Sanford.Multimedia.Midi.dll
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x86\Debug\Sanford.Multimedia.Midi.pdb
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x86\Debug\Sanford.Multimedia.Midi.XML
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\Sanford.Multimedia.Midi.dll
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\Sanford.Multimedia.Midi.pdb
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\Sanford.Multimedia.Midi.XML
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\mscorlib.dll
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\nl\mscorlib.resources.dll
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\sortkey.nlp
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\sorttbls.nlp
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\big5.nlp
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\bopomofo.nlp
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\ksc.nlp
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\prc.nlp
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\prcp.nlp
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\xjis.nlp
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\normidna.nlp
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\normnfc.nlp
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\normnfd.nlp
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\normnfkc.nlp
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\normnfkd.nlp
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.UI.DeviceDialog.resources
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.UI.InputDeviceDialog.resources
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.UI.OutputDeviceDialog.resources
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.UI.PianoControlDialog.resources
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.csproj.GenerateResource.Cache
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.dll
+C:\Users\cschaftenaar\Documents\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.pdb
+C:\Users\tripi\OneDrive\Documenten\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\Sanford.Multimedia.Midi.dll
+C:\Users\tripi\OneDrive\Documenten\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\Sanford.Multimedia.Midi.pdb
+C:\Users\tripi\OneDrive\Documenten\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\Sanford.Multimedia.Midi.XML
+C:\Users\tripi\OneDrive\Documenten\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\mscorlib.dll
+C:\Users\tripi\OneDrive\Documenten\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\nl\mscorlib.resources.dll
+C:\Users\tripi\OneDrive\Documenten\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\sortkey.nlp
+C:\Users\tripi\OneDrive\Documenten\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\sorttbls.nlp
+C:\Users\tripi\OneDrive\Documenten\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\big5.nlp
+C:\Users\tripi\OneDrive\Documenten\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\bopomofo.nlp
+C:\Users\tripi\OneDrive\Documenten\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\ksc.nlp
+C:\Users\tripi\OneDrive\Documenten\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\prc.nlp
+C:\Users\tripi\OneDrive\Documenten\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\prcp.nlp
+C:\Users\tripi\OneDrive\Documenten\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\xjis.nlp
+C:\Users\tripi\OneDrive\Documenten\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\normidna.nlp
+C:\Users\tripi\OneDrive\Documenten\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\normnfc.nlp
+C:\Users\tripi\OneDrive\Documenten\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\normnfd.nlp
+C:\Users\tripi\OneDrive\Documenten\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\normnfkc.nlp
+C:\Users\tripi\OneDrive\Documenten\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\normnfkd.nlp
+C:\Users\tripi\OneDrive\Documenten\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.csprojAssemblyReference.cache
+C:\Users\tripi\OneDrive\Documenten\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.UI.DeviceDialog.resources
+C:\Users\tripi\OneDrive\Documenten\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.UI.InputDeviceDialog.resources
+C:\Users\tripi\OneDrive\Documenten\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.UI.OutputDeviceDialog.resources
+C:\Users\tripi\OneDrive\Documenten\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.UI.PianoControlDialog.resources
+C:\Users\tripi\OneDrive\Documenten\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.csproj.GenerateResource.cache
+C:\Users\tripi\OneDrive\Documenten\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.csproj.CoreCompileInputs.cache
+C:\Users\tripi\OneDrive\Documenten\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.csproj.CopyComplete
+C:\Users\tripi\OneDrive\Documenten\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.dll
+C:\Users\tripi\OneDrive\Documenten\Visual Studio 2017\Projects\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.pdb
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\bin\Debug\Sanford.Multimedia.Midi.XML
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\bin\Debug\Sanford.Multimedia.Midi.dll
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\bin\Debug\Sanford.Multimedia.Midi.pdb
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.csprojAssemblyReference.cache
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.UI.DeviceDialog.resources
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.UI.InputDeviceDialog.resources
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.UI.OutputDeviceDialog.resources
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.UI.PianoControlDialog.resources
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.csproj.GenerateResource.cache
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.csproj.CoreCompileInputs.cache
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.dll
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.pdb
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\Sanford.Multimedia.Midi.dll
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\Sanford.Multimedia.Midi.pdb
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\Sanford.Multimedia.Midi.XML
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\mscorlib.dll
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\nl\mscorlib.resources.dll
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\sortkey.nlp
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\sorttbls.nlp
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\big5.nlp
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\bopomofo.nlp
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\ksc.nlp
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\prc.nlp
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\prcp.nlp
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\xjis.nlp
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\normidna.nlp
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\normnfc.nlp
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\normnfd.nlp
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\normnfkc.nlp
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\normnfkd.nlp
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.csproj.CopyComplete
