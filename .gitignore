@@ -2,3 +2,5 @@
 *.cache
 \bin
 \obj
+bin\
+obj\
