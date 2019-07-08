@@ -1,0 +1,10 @@
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\BMDMidiLib\bin\x64\Debug\BMDMidiLib.dll
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\BMDMidiLib\bin\x64\Debug\BMDMidiLib.pdb
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\BMDMidiLib\bin\x64\Debug\Sanford.Multimedia.Midi.dll
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\BMDMidiLib\bin\x64\Debug\Sanford.Multimedia.Midi.pdb
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\BMDMidiLib\bin\x64\Debug\Sanford.Multimedia.Midi.xml
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\BMDMidiLib\obj\x64\Debug\BMDMidiLib.csprojAssemblyReference.cache
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\BMDMidiLib\obj\x64\Debug\BMDMidiLib.csproj.CoreCompileInputs.cache
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\BMDMidiLib\obj\x64\Debug\BMDMidiLib.csproj.CopyComplete
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\BMDMidiLib\obj\x64\Debug\BMDMidiLib.dll
+C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\BMDMidiLib\obj\x64\Debug\BMDMidiLib.pdb

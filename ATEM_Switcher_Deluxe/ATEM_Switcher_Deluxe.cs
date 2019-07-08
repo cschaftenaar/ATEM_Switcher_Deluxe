@@ -133,11 +133,6 @@ namespace ATEM_Switcher_Deluxe
                 sw.Discover();
                 sw.Connect();
 
-                //this.Invoke((Action)(() =>
-                //{
-                //    Upload1 upl = new Upload1(this.sw, @"C:\Users\cschaftenaar\Desktop\logo.bmp", 6);
-                //}));//
-
                 // Reset Buttons
                 if (existMIDI)
                 {
