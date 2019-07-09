@@ -96,7 +96,6 @@
     <Compile Include="SwitcherKeyFlyKeyFrameParametersCallback.cs" />
     <Compile Include="SwitcherKeyFlyParametersCallback.cs" />
     <Compile Include="SwitcherMixMinusOutputCallback.cs" />
-    <Compile Include="SwitcherInputSuperSourceCallback.cs" />
     <Compile Include="SwitcherMacroPoolCallback.cs" />
     <Compile Include="SwitcherKeyDVEParametersCallback.cs" />
     <Compile Include="SwitcherKeyPatternParametersCallback.cs" />
@@ -118,7 +117,6 @@
     <Compile Include="SwitcherInputCallback.cs" />
     <Compile Include="SwitcherKeyCallback.cs" />
     <Compile Include="SwitcherMixEffectBlockCallback.cs" />
-    <Compile Include="SwitcherMultiViewCallback.cs" />
     <Compile Include="SwitcherMediaplayerCallback.cs" />
     <Compile Include="SwitcherTransitionDipParametersCallback.cs" />
     <Compile Include="SwitcherTransitionDVEParametersCallback.cs" />

@@ -151,15 +151,15 @@ namespace ATEM_Switcher_Deluxe
                 sw.BMDSwitcherAudioMixer.SwitcherAudioMixerEventTypeProgramOutGainChanged += new SwitcherAudioMixerEventHandler((s, a) => this.Invoke((Action)(() => OnSwitcherAudioMixerEventTypeProgramOutGainChanged(s, a))));//
                 sw.BMDSwitcherAudioMixer.SwitcherAudioMixerEventTypeProgramOutBalanceChanged += new SwitcherAudioMixerEventHandler((s, a) => this.Invoke((Action)(() => OnSwitcherAudioMixerEventTypeProgramOutBalanceChanged(s, a))));//
 
-                sw.BMDSwitcherMixEffectBlock[0].SwitcherMixEffectBlockPropertyIdPreviewInput_v7_5 += new SwitcherMixEffectBlockEventHandler((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdPreviewInput(s, a))));//
-                sw.BMDSwitcherMixEffectBlock[0].SwitcherMixEffectBlockPropertyIdProgramInput_v7_5 += new SwitcherMixEffectBlockEventHandler((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdProgramInput(s, a))));//
-                sw.BMDSwitcherMixEffectBlock[0].SwitcherMixEffectBlockPropertyIdInTransition_v7_5 += new SwitcherMixEffectBlockEventHandler((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdInTransition(s, a))));//
-                sw.BMDSwitcherMixEffectBlock[0].SwitcherMixEffectBlockPropertyIdTransitionPosition_v7_5 += new SwitcherMixEffectBlockEventHandler((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdTransitionPosition(s, a))));//
-                sw.BMDSwitcherMixEffectBlock[0].SwitcherMixEffectBlockPropertyIdTransitionFramesRemaining_v7_5 += new SwitcherMixEffectBlockEventHandler((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdTransitionFramesRemaining(s, a))));//
-                sw.BMDSwitcherMixEffectBlock[0].SwitcherMixEffectBlockPropertyIdPreviewTransition_v7_5 += new SwitcherMixEffectBlockEventHandler((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdPreviewTransition(s, a))));//
-                sw.BMDSwitcherMixEffectBlock[0].SwitcherMixEffectBlockPropertyIdFadeToBlackInTransition_v7_5 += new SwitcherMixEffectBlockEventHandler((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdFadeToBlackInTransition(s, a))));//
-                sw.BMDSwitcherMixEffectBlock[0].SwitcherMixEffectBlockPropertyIdFadeToBlackFullyBlack_v7_5 += new SwitcherMixEffectBlockEventHandler((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdFadeToBlackFullyBlack(s, a))));//
-                sw.BMDSwitcherMixEffectBlock[0].SwitcherMixEffectBlockPropertyIdFadeToBlackFramesRemaining_v7_5 += new SwitcherMixEffectBlockEventHandler((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdFadeToBlackFramesRemaining(s, a))));//
+                sw.BMDSwitcherMixEffectBlock[0].SwitcherMixEffectBlockPropertyIdPreviewInput_v7_5 += new SwitcherMixEffectBlockEventHandler_v7_5((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdPreviewInput(s, a))));//
+                sw.BMDSwitcherMixEffectBlock[0].SwitcherMixEffectBlockPropertyIdProgramInput_v7_5 += new SwitcherMixEffectBlockEventHandler_v7_5((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdProgramInput(s, a))));//
+                sw.BMDSwitcherMixEffectBlock[0].SwitcherMixEffectBlockPropertyIdInTransition_v7_5 += new SwitcherMixEffectBlockEventHandler_v7_5((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdInTransition(s, a))));//
+                sw.BMDSwitcherMixEffectBlock[0].SwitcherMixEffectBlockPropertyIdTransitionPosition_v7_5 += new SwitcherMixEffectBlockEventHandler_v7_5((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdTransitionPosition(s, a))));//
+                sw.BMDSwitcherMixEffectBlock[0].SwitcherMixEffectBlockPropertyIdTransitionFramesRemaining_v7_5 += new SwitcherMixEffectBlockEventHandler_v7_5((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdTransitionFramesRemaining(s, a))));//
+                sw.BMDSwitcherMixEffectBlock[0].SwitcherMixEffectBlockPropertyIdPreviewTransition_v7_5 += new SwitcherMixEffectBlockEventHandler_v7_5((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdPreviewTransition(s, a))));//
+                sw.BMDSwitcherMixEffectBlock[0].SwitcherMixEffectBlockPropertyIdFadeToBlackInTransition_v7_5 += new SwitcherMixEffectBlockEventHandler_v7_5((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdFadeToBlackInTransition(s, a))));//
+                sw.BMDSwitcherMixEffectBlock[0].SwitcherMixEffectBlockPropertyIdFadeToBlackFullyBlack_v7_5 += new SwitcherMixEffectBlockEventHandler_v7_5((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdFadeToBlackFullyBlack(s, a))));//
+                sw.BMDSwitcherMixEffectBlock[0].SwitcherMixEffectBlockPropertyIdFadeToBlackFramesRemaining_v7_5 += new SwitcherMixEffectBlockEventHandler_v7_5((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdFadeToBlackFramesRemaining(s, a))));//
 
                 for (int i = 0; i < sw.BMDSwitcherKey.Count; i++)
                 {
@@ -662,27 +662,27 @@ namespace ATEM_Switcher_Deluxe
             buttonTransitionStyleStinger.ImageIndex = s.TransitionStyle == BMDSwitcherAPI._BMDSwitcherTransitionStyle.bmdSwitcherTransitionStyleStinger ? 3 : 0;
             buttonTransitionStyleDVE.ImageIndex = s.TransitionStyle == BMDSwitcherAPI._BMDSwitcherTransitionStyle.bmdSwitcherTransitionStyleDVE ? 3 : 0;
         }
-        private void OnSwitcherMixEffectBlockPropertyIdFadeToBlackFramesRemaining(SwitcherMixEffectBlockCallback s, SwitcherMixEffectBlockEventArgs a)
+        private void OnSwitcherMixEffectBlockPropertyIdFadeToBlackFramesRemaining(SwitcherMixEffectBlockCallback_v7_5 s, SwitcherMixEffectBlockEventArgs_v7_5 a)
         {
             textBoxFadeToBlackRate.Text = s.GetInt(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdFadeToBlackFramesRemaining_v7_5).ToString();
         }
-        private void OnSwitcherMixEffectBlockPropertyIdFadeToBlackFullyBlack(SwitcherMixEffectBlockCallback s, SwitcherMixEffectBlockEventArgs a)
+        private void OnSwitcherMixEffectBlockPropertyIdFadeToBlackFullyBlack(SwitcherMixEffectBlockCallback_v7_5 s, SwitcherMixEffectBlockEventArgs_v7_5 a)
         {
             buttonFadeToBlack.ImageIndex = s.GetFlag(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdFadeToBlackFullyBlack_v7_5) == 0 ? 0 : 2;
         }
-        private void OnSwitcherMixEffectBlockPropertyIdFadeToBlackInTransition(SwitcherMixEffectBlockCallback s, SwitcherMixEffectBlockEventArgs a)
+        private void OnSwitcherMixEffectBlockPropertyIdFadeToBlackInTransition(SwitcherMixEffectBlockCallback_v7_5 s, SwitcherMixEffectBlockEventArgs_v7_5 a)
         {
             buttonFadeToBlack.ImageIndex = s.GetFlag(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdFadeToBlackInTransition_v7_5) == 0 ? 0 : 2;
         }
-        private void OnSwitcherMixEffectBlockPropertyIdPreviewTransition(SwitcherMixEffectBlockCallback s, SwitcherMixEffectBlockEventArgs a)
+        private void OnSwitcherMixEffectBlockPropertyIdPreviewTransition(SwitcherMixEffectBlockCallback_v7_5 s, SwitcherMixEffectBlockEventArgs_v7_5 a)
         {
             buttonTransitionStylePrevTrans.ImageIndex = s.GetFlag(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdPreviewTransition_v7_5) == 1 ? 2 : 0;
         }
-        private void OnSwitcherMixEffectBlockPropertyIdTransitionFramesRemaining(SwitcherMixEffectBlockCallback s, SwitcherMixEffectBlockEventArgs a)
+        private void OnSwitcherMixEffectBlockPropertyIdTransitionFramesRemaining(SwitcherMixEffectBlockCallback_v7_5 s, SwitcherMixEffectBlockEventArgs_v7_5 a)
         {
             textBoxNextTransitionRate.Text = s.GetInt(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdTransitionFramesRemaining_v7_5).ToString();
         }
-        private void OnSwitcherMixEffectBlockPropertyIdPreviewInput(SwitcherMixEffectBlockCallback s, SwitcherMixEffectBlockEventArgs a)
+        private void OnSwitcherMixEffectBlockPropertyIdPreviewInput(SwitcherMixEffectBlockCallback_v7_5 s, SwitcherMixEffectBlockEventArgs_v7_5 a)
         {
             this.buttonPreviewCam1.ImageIndex = 0;
             this.buttonPreviewCam2.ImageIndex = 0;
@@ -740,7 +740,7 @@ namespace ATEM_Switcher_Deluxe
                     break;
             }
         }
-        private void OnSwitcherMixEffectBlockPropertyIdProgramInput(SwitcherMixEffectBlockCallback s, SwitcherMixEffectBlockEventArgs a)
+        private void OnSwitcherMixEffectBlockPropertyIdProgramInput(SwitcherMixEffectBlockCallback_v7_5 s, SwitcherMixEffectBlockEventArgs_v7_5 a)
         {
             this.buttonProgramCam1.ImageIndex = 0;
             this.buttonProgramCam2.ImageIndex = 0;
@@ -798,7 +798,7 @@ namespace ATEM_Switcher_Deluxe
                     break;
             }
         }
-        private void OnSwitcherMixEffectBlockPropertyIdInTransition(SwitcherMixEffectBlockCallback s, SwitcherMixEffectBlockEventArgs a)
+        private void OnSwitcherMixEffectBlockPropertyIdInTransition(SwitcherMixEffectBlockCallback_v7_5 s, SwitcherMixEffectBlockEventArgs_v7_5 a)
         {
             int inTransition = s.GetFlag(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdInTransition_v7_5);
 
@@ -842,7 +842,7 @@ namespace ATEM_Switcher_Deluxe
                 m_currentTransitionReachedHalfway = false;
             }
         }
-        private void OnSwitcherMixEffectBlockPropertyIdTransitionPosition(SwitcherMixEffectBlockCallback s, SwitcherMixEffectBlockEventArgs a)
+        private void OnSwitcherMixEffectBlockPropertyIdTransitionPosition(SwitcherMixEffectBlockCallback_v7_5 s, SwitcherMixEffectBlockEventArgs_v7_5 a)
         {
             double transitionPos = s.GetFloat(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdTransitionPosition_v7_5);
             m_currentTransitionReachedHalfway = (transitionPos >= 0.50);

@@ -87,4 +87,4 @@ C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\
 C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\normnfkc.nlp
 C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\bin\x64\Debug\normnfkd.nlp
 C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.csproj.CopyComplete
-C:\Users\tripi\source\repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.csprojAssemblyReference.cache
+C:\Users\tripi\Source\Repos\ATEM_Switcher_Deluxe\Sanford.Multimedia.Midi-master\Source\obj\Debug\Sanford.Multimedia.Midi.csprojAssemblyReference.cache

@@ -101,13 +101,11 @@ namespace BMDSwitcherLib
 		public List<SwitcherInputAuxCallback> BMDSwitcherInputAux = new List<SwitcherInputAuxCallback>();
 		public List<SwitcherInputCallback> BMDSwitcherInput = new List<SwitcherInputCallback>();
 		public List<SwitcherKeyCallback> BMDSwitcherKey = new List<SwitcherKeyCallback>();
-		public List<SwitcherMixEffectBlockCallback> BMDSwitcherMixEffectBlock = new List<SwitcherMixEffectBlockCallback>();
+		public List<SwitcherMixEffectBlockCallback_v7_5> BMDSwitcherMixEffectBlock = new List<SwitcherMixEffectBlockCallback_v7_5>();
         public List<SwitcherMediaPlayerCallback> BMDSwitcherMediaPlayer = new List<SwitcherMediaPlayerCallback>();
         public SwitcherStillsCallback BMDSwitcherStills;
         public List<SwitcherStill> BMDSwitcherStill = new List<SwitcherStill>();
-        public List<SwitcherMultiViewCallback> BMDSwitcherMultiView = new List<SwitcherMultiViewCallback>();
         public List<SwitcherInputColorCallback> BMDSwitcherInputColor = new List<SwitcherInputColorCallback>();
-        public List<SwitcherInputSuperSourceCallback> BMDSwitcherInputSuperSource = new List<SwitcherInputSuperSourceCallback>();
         public List<SwitcherKeyChromaParametersCallback> BMDSwitcherKeyChromaParameters = new List<SwitcherKeyChromaParametersCallback>();
         public List<SwitcherKeyLumaParametersCallback> BMDSwitcherKeyLumaParameters = new List<SwitcherKeyLumaParametersCallback>();
         public List<SwitcherKeyPatternParametersCallback> BMDSwitcherKeyPatternParameters = new List<SwitcherKeyPatternParametersCallback>();
@@ -291,12 +289,14 @@ namespace BMDSwitcherLib
                         #endregion
 
                         #region SwitcherPortTypeSuperSource
+                        /*
                         case _BMDSwitcherPortType.bmdSwitcherPortTypeSuperSource:
                             this.m_switcherInputSuperSource = (IBMDSwitcherInputSuperSource)this.m_switcherInput;
                             SwitcherInputSuperSourceCallback switcherInputSuperSourceCallback = new SwitcherInputSuperSourceCallback(this.m_switcherInputSuperSource, this.BMDSwitcherInfo.TotalSwitcherPortTypeSuperSource);
                             this.BMDSwitcherInputSuperSource.Add(switcherInputSuperSourceCallback);
                             this.BMDSwitcherInfo.TotalSwitcherPortTypeSuperSource++;
                             break;
+                        */
                        #endregion
                     }
                     SwitcherInputIterator.Next(out this.m_switcherInput);
@@ -365,7 +365,7 @@ namespace BMDSwitcherLib
                     this.m_switcherTransitionWipeParameters.AddCallback(this.BMDSwitcherTransitionWipeParameters);
                     #endregion
 
-                    SwitcherMixEffectBlockCallback switcherMixEffectBlockCallback = new SwitcherMixEffectBlockCallback(this.m_switcherMixEffectBlock, this.BMDSwitcherInfo.TotalSwitcherMixEffectBlock);
+                    SwitcherMixEffectBlockCallback_v7_5 switcherMixEffectBlockCallback = new SwitcherMixEffectBlockCallback_v7_5(this.m_switcherMixEffectBlock, this.BMDSwitcherInfo.TotalSwitcherMixEffectBlock);
                     this.m_switcherMixEffectBlock.AddCallback(switcherMixEffectBlockCallback);
                     this.BMDSwitcherMixEffectBlock.Add(switcherMixEffectBlockCallback);
 
@@ -520,6 +520,7 @@ namespace BMDSwitcherLib
             #endregion
 
             #region SwitcherMultiView
+            /*
             IBMDSwitcherMultiViewIterator SwitcherMultiViewIterator = null;
             Guid SwitcherMultiViewIteratorIID = typeof(IBMDSwitcherMultiViewIterator).GUID;
             this.m_switcher.CreateIterator(ref SwitcherMultiViewIteratorIID, out IntPtr SwitcherMultiViewIteratorintPtr);
@@ -537,6 +538,7 @@ namespace BMDSwitcherLib
                     this.BMDSwitcherInfo.TotalSwitcherMultiView++;
                 }
             }
+            */
             #endregion
         }
         public void Disconnect()
