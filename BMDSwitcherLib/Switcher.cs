@@ -58,7 +58,7 @@ namespace BMDSwitcherLib
 		private IBMDSwitcherMacroPool m_switcherMacroPool;
 		private IBMDSwitcherMediaPlayer m_switcherMediaPlayer;
 		private IBMDSwitcherMediaPool m_switcherMediaPool;
-		private IBMDSwitcherMixEffectBlock m_switcherMixEffectBlock; 
+		private IBMDSwitcherMixEffectBlock_v7_5 m_switcherMixEffectBlock; 
 		private IBMDSwitcherMixMinusOutput m_switcherMixMinusOutput;
 		private IBMDSwitcherMultiView m_switcherMultiView;
 		private IBMDSwitcherStills m_switcherStills;
@@ -304,16 +304,16 @@ namespace BMDSwitcherLib
                 }
             }
             #endregion
-            
+
             #region SwitcherMixEffectBlock
-            IBMDSwitcherMixEffectBlockIterator SwitcherMixEffectBlockIterator = null;
-            Guid SwitcherMixEffectBlockIteratorIID = typeof(IBMDSwitcherMixEffectBlockIterator).GUID;
+            IBMDSwitcherMixEffectBlockIterator_v7_5 SwitcherMixEffectBlockIterator = null;
+            Guid SwitcherMixEffectBlockIteratorIID = typeof(IBMDSwitcherMixEffectBlockIterator_v7_5).GUID;
 
             IBMDSwitcherKeyIterator SwitcherKeyIterator = null;
             Guid SwitcherKeyIteratorIID = typeof(IBMDSwitcherKeyIterator).GUID;
 
             this.m_switcher.CreateIterator(ref SwitcherMixEffectBlockIteratorIID, out IntPtr SwitcherMixEffectBlockIteratorintPtr);
-            SwitcherMixEffectBlockIterator = (IBMDSwitcherMixEffectBlockIterator)Marshal.GetObjectForIUnknown(SwitcherMixEffectBlockIteratorintPtr);
+            SwitcherMixEffectBlockIterator = (IBMDSwitcherMixEffectBlockIterator_v7_5)Marshal.GetObjectForIUnknown(SwitcherMixEffectBlockIteratorintPtr);
 
             if (SwitcherMixEffectBlockIterator != null)
             {
@@ -588,13 +588,13 @@ namespace BMDSwitcherLib
 
                     #region ProgramInput | <nr>
                     case "programinput":
-                        this.BMDSwitcherMixEffectBlock[0].SetInt(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId.bmdSwitcherMixEffectBlockPropertyIdProgramInput, Int32.Parse(args[1]));
+                        this.BMDSwitcherMixEffectBlock[0].SetInt(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdProgramInput_v7_5, Int32.Parse(args[1]));
                         break;
                     #endregion
 
                     #region PreviewInput | <nr>
                     case "previewinput":
-                        this.BMDSwitcherMixEffectBlock[0].SetInt(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId.bmdSwitcherMixEffectBlockPropertyIdPreviewInput, Int32.Parse(args[1]));
+                        this.BMDSwitcherMixEffectBlock[0].SetInt(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdPreviewInput_v7_5, Int32.Parse(args[1]));
                         break;
                     #endregion
 
@@ -712,17 +712,17 @@ namespace BMDSwitcherLib
 
                     #region PreviewTransition
                     case "previewtransition":
-                        this.BMDSwitcherMixEffectBlock[0].SetFlag(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId.bmdSwitcherMixEffectBlockPropertyIdPreviewTransition, this.BMDSwitcherMixEffectBlock[0].GetFlag(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId.bmdSwitcherMixEffectBlockPropertyIdPreviewTransition) == 0 ? 1 : 0);
+                        this.BMDSwitcherMixEffectBlock[0].SetFlag(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdPreviewTransition_v7_5, this.BMDSwitcherMixEffectBlock[0].GetFlag(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdPreviewTransition_v7_5) == 0 ? 1 : 0);
                         break;
                     #endregion
                     #region PreviewTransitionOn
                     case "previewtransitionon":
-                        this.BMDSwitcherMixEffectBlock[0].SetFlag(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId.bmdSwitcherMixEffectBlockPropertyIdPreviewTransition, 1);
+                        this.BMDSwitcherMixEffectBlock[0].SetFlag(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdPreviewTransition_v7_5, 1);
                         break;
                     #endregion
                     #region PreviewTransitionOff
                     case "previewtransitionoff":
-                        this.BMDSwitcherMixEffectBlock[0].SetFlag(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId.bmdSwitcherMixEffectBlockPropertyIdPreviewTransition, 0);
+                        this.BMDSwitcherMixEffectBlock[0].SetFlag(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdPreviewTransition_v7_5, 0);
                         break;
                     #endregion
 

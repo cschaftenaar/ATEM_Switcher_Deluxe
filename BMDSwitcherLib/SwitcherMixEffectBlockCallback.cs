@@ -34,8 +34,8 @@ namespace BMDSwitcherLib
 {
     public class SwitcherMixEffectBlockEventArgs : EventArgs
     {
-        internal _BMDSwitcherMixEffectBlockPropertyId _propId;
-        public _BMDSwitcherMixEffectBlockPropertyId PropId
+        internal _BMDSwitcherMixEffectBlockPropertyId_v7_5 _propId;
+        public _BMDSwitcherMixEffectBlockPropertyId_v7_5 PropId
         {
             get
             {
@@ -45,76 +45,76 @@ namespace BMDSwitcherLib
     }
     public delegate void SwitcherMixEffectBlockEventHandler(SwitcherMixEffectBlockCallback s, SwitcherMixEffectBlockEventArgs a);
 
-    public class SwitcherMixEffectBlockCallback : IBMDSwitcherMixEffectBlockCallback
+    public class SwitcherMixEffectBlockCallback : IBMDSwitcherMixEffectBlockCallback_v7_5
     {
         // Events:
-        public event SwitcherMixEffectBlockEventHandler SwitcherMixEffectBlockPropertyIdFadeToBlackFramesRemaining;
-        public event SwitcherMixEffectBlockEventHandler SwitcherMixEffectBlockPropertyIdFadeToBlackFullyBlack;
-        public event SwitcherMixEffectBlockEventHandler SwitcherMixEffectBlockPropertyIdFadeToBlackInTransition;
-        public event SwitcherMixEffectBlockEventHandler SwitcherMixEffectBlockPropertyIdFadeToBlackRate;
-        public event SwitcherMixEffectBlockEventHandler SwitcherMixEffectBlockPropertyIdInFadeToBlack;
-        public event SwitcherMixEffectBlockEventHandler SwitcherMixEffectBlockPropertyIdInputAvailabilityMask;
-        public event SwitcherMixEffectBlockEventHandler SwitcherMixEffectBlockPropertyIdProgramInput;
-        public event SwitcherMixEffectBlockEventHandler SwitcherMixEffectBlockPropertyIdPreviewLive;
-        public event SwitcherMixEffectBlockEventHandler SwitcherMixEffectBlockPropertyIdPreviewTransition;
-        public event SwitcherMixEffectBlockEventHandler SwitcherMixEffectBlockPropertyIdPreviewInput;
-        public event SwitcherMixEffectBlockEventHandler SwitcherMixEffectBlockPropertyIdTransitionFramesRemaining;
-        public event SwitcherMixEffectBlockEventHandler SwitcherMixEffectBlockPropertyIdTransitionPosition;
-        public event SwitcherMixEffectBlockEventHandler SwitcherMixEffectBlockPropertyIdInTransition;
+        public event SwitcherMixEffectBlockEventHandler SwitcherMixEffectBlockPropertyIdFadeToBlackFramesRemaining_v7_5;
+        public event SwitcherMixEffectBlockEventHandler SwitcherMixEffectBlockPropertyIdFadeToBlackFullyBlack_v7_5;
+        public event SwitcherMixEffectBlockEventHandler SwitcherMixEffectBlockPropertyIdFadeToBlackInTransition_v7_5;
+        public event SwitcherMixEffectBlockEventHandler SwitcherMixEffectBlockPropertyIdFadeToBlackRate_v7_5;
+        public event SwitcherMixEffectBlockEventHandler SwitcherMixEffectBlockPropertyIdInFadeToBlack_v7_5;
+        public event SwitcherMixEffectBlockEventHandler SwitcherMixEffectBlockPropertyIdInputAvailabilityMask_v7_5;
+        public event SwitcherMixEffectBlockEventHandler SwitcherMixEffectBlockPropertyIdInTransition_v7_5;
+        public event SwitcherMixEffectBlockEventHandler SwitcherMixEffectBlockPropertyIdPreviewInput_v7_5;
+        public event SwitcherMixEffectBlockEventHandler SwitcherMixEffectBlockPropertyIdPreviewLive_v7_5;
+        public event SwitcherMixEffectBlockEventHandler SwitcherMixEffectBlockPropertyIdPreviewTransition_v7_5;
+        public event SwitcherMixEffectBlockEventHandler SwitcherMixEffectBlockPropertyIdProgramInput_v7_5;
+        public event SwitcherMixEffectBlockEventHandler SwitcherMixEffectBlockPropertyIdTransitionFramesRemaining_v7_5;
+        public event SwitcherMixEffectBlockEventHandler SwitcherMixEffectBlockPropertyIdTransitionPosition_v7_5;
 
         private SwitcherMixEffectBlockEventArgs _switcherMixEffectBlockEventArgs;
 
         private int _indexnr;
-        internal IBMDSwitcherMixEffectBlock MixEffectBlock;
-        internal SwitcherMixEffectBlockCallback(IBMDSwitcherMixEffectBlock mixEffectBlock, int index)
+        internal IBMDSwitcherMixEffectBlock_v7_5 MixEffectBlock;
+        internal SwitcherMixEffectBlockCallback(IBMDSwitcherMixEffectBlock_v7_5 mixEffectBlock, int index)
         {
             this._indexnr = index;
             this.MixEffectBlock = mixEffectBlock;
         }
 
-        void IBMDSwitcherMixEffectBlockCallback.PropertyChanged(_BMDSwitcherMixEffectBlockPropertyId propId)
+        void IBMDSwitcherMixEffectBlockCallback_v7_5.PropertyChanged(_BMDSwitcherMixEffectBlockPropertyId_v7_5 propId)
         {
             this._switcherMixEffectBlockEventArgs = new SwitcherMixEffectBlockEventArgs { _propId = propId };
             switch (propId)
             {
-                case _BMDSwitcherMixEffectBlockPropertyId.bmdSwitcherMixEffectBlockPropertyIdFadeToBlackFramesRemaining:
-                    this.SwitcherMixEffectBlockPropertyIdFadeToBlackFramesRemaining?.Invoke(this, this._switcherMixEffectBlockEventArgs);
+                case _BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdFadeToBlackFramesRemaining_v7_5:
+                    this.SwitcherMixEffectBlockPropertyIdFadeToBlackFramesRemaining_v7_5?.Invoke(this, this._switcherMixEffectBlockEventArgs);
                     break;
-                case _BMDSwitcherMixEffectBlockPropertyId.bmdSwitcherMixEffectBlockPropertyIdFadeToBlackFullyBlack:
-                    this.SwitcherMixEffectBlockPropertyIdFadeToBlackFullyBlack?.Invoke(this, this._switcherMixEffectBlockEventArgs);
+                case _BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdFadeToBlackFullyBlack_v7_5:
+                    this.SwitcherMixEffectBlockPropertyIdFadeToBlackFullyBlack_v7_5?.Invoke(this, this._switcherMixEffectBlockEventArgs);
                     break;
-                case _BMDSwitcherMixEffectBlockPropertyId.bmdSwitcherMixEffectBlockPropertyIdFadeToBlackInTransition:
-                    this.SwitcherMixEffectBlockPropertyIdFadeToBlackInTransition?.Invoke(this, this._switcherMixEffectBlockEventArgs);
+                case _BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdFadeToBlackInTransition_v7_5:
+                    this.SwitcherMixEffectBlockPropertyIdFadeToBlackInTransition_v7_5?.Invoke(this, this._switcherMixEffectBlockEventArgs);
                     break;
-                case _BMDSwitcherMixEffectBlockPropertyId.bmdSwitcherMixEffectBlockPropertyIdFadeToBlackRate:
-                    this.SwitcherMixEffectBlockPropertyIdFadeToBlackRate?.Invoke(this, this._switcherMixEffectBlockEventArgs);
+                case _BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdFadeToBlackRate_v7_5:
+                    this.SwitcherMixEffectBlockPropertyIdFadeToBlackRate_v7_5?.Invoke(this, this._switcherMixEffectBlockEventArgs);
                     break;
-                case _BMDSwitcherMixEffectBlockPropertyId.bmdSwitcherMixEffectBlockPropertyIdInFadeToBlack:
-                    this.SwitcherMixEffectBlockPropertyIdInFadeToBlack?.Invoke(this, this._switcherMixEffectBlockEventArgs);
+                case _BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdInFadeToBlack_v7_5:
+                    this.SwitcherMixEffectBlockPropertyIdInFadeToBlack_v7_5?.Invoke(this, this._switcherMixEffectBlockEventArgs);
                     break;
-                case _BMDSwitcherMixEffectBlockPropertyId.bmdSwitcherMixEffectBlockPropertyIdInputAvailabilityMask:
-                    this.SwitcherMixEffectBlockPropertyIdInputAvailabilityMask?.Invoke(this, this._switcherMixEffectBlockEventArgs);
+                case _BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdInputAvailabilityMask_v7_5:
+                    this.SwitcherMixEffectBlockPropertyIdInputAvailabilityMask_v7_5?.Invoke(this, this._switcherMixEffectBlockEventArgs);
                     break;
-                case _BMDSwitcherMixEffectBlockPropertyId.bmdSwitcherMixEffectBlockPropertyIdInTransition:
-                    this.SwitcherMixEffectBlockPropertyIdInTransition?.Invoke(this, this._switcherMixEffectBlockEventArgs);
+                case _BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdInTransition_v7_5:
+                    this.SwitcherMixEffectBlockPropertyIdInTransition_v7_5?.Invoke(this, this._switcherMixEffectBlockEventArgs);
                     break;
-                case _BMDSwitcherMixEffectBlockPropertyId.bmdSwitcherMixEffectBlockPropertyIdPreviewInput:
-                    this.SwitcherMixEffectBlockPropertyIdPreviewInput?.Invoke(this, this._switcherMixEffectBlockEventArgs);
+                case _BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdPreviewInput_v7_5:
+                    this.SwitcherMixEffectBlockPropertyIdPreviewInput_v7_5?.Invoke(this, this._switcherMixEffectBlockEventArgs);
                     break;
-                case _BMDSwitcherMixEffectBlockPropertyId.bmdSwitcherMixEffectBlockPropertyIdPreviewLive:
-                    this.SwitcherMixEffectBlockPropertyIdPreviewLive?.Invoke(this, this._switcherMixEffectBlockEventArgs);
+                case _BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdPreviewLive_v7_5:
+                    this.SwitcherMixEffectBlockPropertyIdPreviewLive_v7_5?.Invoke(this, this._switcherMixEffectBlockEventArgs);
                     break;
-                case _BMDSwitcherMixEffectBlockPropertyId.bmdSwitcherMixEffectBlockPropertyIdPreviewTransition:
-                    this.SwitcherMixEffectBlockPropertyIdPreviewTransition?.Invoke(this, this._switcherMixEffectBlockEventArgs);
+                case _BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdPreviewTransition_v7_5:
+                    this.SwitcherMixEffectBlockPropertyIdPreviewTransition_v7_5?.Invoke(this, this._switcherMixEffectBlockEventArgs);
                     break;
-                case _BMDSwitcherMixEffectBlockPropertyId.bmdSwitcherMixEffectBlockPropertyIdProgramInput:
-                    this.SwitcherMixEffectBlockPropertyIdProgramInput?.Invoke(this, this._switcherMixEffectBlockEventArgs);
+                case _BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdProgramInput_v7_5:
+                    this.SwitcherMixEffectBlockPropertyIdProgramInput_v7_5?.Invoke(this, this._switcherMixEffectBlockEventArgs);
                     break;              
-                case _BMDSwitcherMixEffectBlockPropertyId.bmdSwitcherMixEffectBlockPropertyIdTransitionFramesRemaining:
-                    this.SwitcherMixEffectBlockPropertyIdTransitionFramesRemaining?.Invoke(this, this._switcherMixEffectBlockEventArgs);
+                case _BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdTransitionFramesRemaining_v7_5:
+                    this.SwitcherMixEffectBlockPropertyIdTransitionFramesRemaining_v7_5?.Invoke(this, this._switcherMixEffectBlockEventArgs);
                     break;
-                case _BMDSwitcherMixEffectBlockPropertyId.bmdSwitcherMixEffectBlockPropertyIdTransitionPosition:
-                    this.SwitcherMixEffectBlockPropertyIdTransitionPosition?.Invoke(this, this._switcherMixEffectBlockEventArgs);
+                case _BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdTransitionPosition_v7_5:
+                    this.SwitcherMixEffectBlockPropertyIdTransitionPosition_v7_5?.Invoke(this, this._switcherMixEffectBlockEventArgs);
                     break;
             }
         }
@@ -143,38 +143,38 @@ namespace BMDSwitcherLib
         {
             this.MixEffectBlock.PerformFadeToBlack();
         }
-        public void SetInt(_BMDSwitcherMixEffectBlockPropertyId propertyId, long value)
+        public void SetInt(_BMDSwitcherMixEffectBlockPropertyId_v7_5 propertyId, long value)
         {
             this.MixEffectBlock.SetInt(propertyId, value);
         }
-        public long GetInt(_BMDSwitcherMixEffectBlockPropertyId propertyId)
+        public long GetInt(_BMDSwitcherMixEffectBlockPropertyId_v7_5 propertyId)
         {
             this.MixEffectBlock.GetInt(propertyId, out this._intvalue);
             return this._intvalue;
         }
-        public void SetString(_BMDSwitcherMixEffectBlockPropertyId propertyId, string strongvalue)
+        public void SetString(_BMDSwitcherMixEffectBlockPropertyId_v7_5 propertyId, string strongvalue)
         {
             this.MixEffectBlock.SetString(propertyId, strongvalue);
         }
-        public string GetString(_BMDSwitcherMixEffectBlockPropertyId propertyId)
+        public string GetString(_BMDSwitcherMixEffectBlockPropertyId_v7_5 propertyId)
         {
             this.MixEffectBlock.GetString(propertyId, out this._stringvalue);
             return this._stringvalue;
         }
-        public void SetFlag(_BMDSwitcherMixEffectBlockPropertyId propertryId, int _intvalue)
+        public void SetFlag(_BMDSwitcherMixEffectBlockPropertyId_v7_5 propertryId, int _intvalue)
         {
             this.MixEffectBlock.SetFlag(propertryId, _intvalue);
         }
-        public int GetFlag(_BMDSwitcherMixEffectBlockPropertyId propertryId)
+        public int GetFlag(_BMDSwitcherMixEffectBlockPropertyId_v7_5 propertryId)
         {
             this.MixEffectBlock.GetFlag(propertryId, out this._flagvalue);
             return this._flagvalue;
         }
-        public void SetFloat(_BMDSwitcherMixEffectBlockPropertyId propertryId, double _floatvalue)
+        public void SetFloat(_BMDSwitcherMixEffectBlockPropertyId_v7_5 propertryId, double _floatvalue)
         {
             this.MixEffectBlock.SetFloat(propertryId, _floatvalue);
         }
-        public double GetFloat(_BMDSwitcherMixEffectBlockPropertyId propertryId)
+        public double GetFloat(_BMDSwitcherMixEffectBlockPropertyId_v7_5 propertryId)
         {
             this.MixEffectBlock.GetFloat(propertryId, out this._floatvalue);
             return this._floatvalue;
