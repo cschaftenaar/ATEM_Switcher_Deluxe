@@ -126,7 +126,7 @@ namespace ATEM_Switcher_Deluxe
 
                 BMDSwitcherLib.DeviceForm dev = new BMDSwitcherLib.DeviceForm()
                 {
-                    DeviceAddress = "192.168.0.200"
+                    DeviceAddress = "192.168.1.200"
                 };
                 dev.ShowDialog();
                 sw = new Switcher(dev.DeviceAddress);
