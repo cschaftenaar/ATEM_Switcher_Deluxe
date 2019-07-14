@@ -60,7 +60,7 @@ namespace ATEM_Switcher_Deluxe
         public XKeys_Controller XKeys;
         public BCF2000_MIDI_Controller midi_BCF2000;
 
-        ChannelMessageEventArgs BCF2000_Messages;
+        //ChannelMessageEventArgs BCF2000_Messages;
                
         protected override void OnLoad(EventArgs e)
         {
@@ -151,15 +151,15 @@ namespace ATEM_Switcher_Deluxe
                 sw.BMDSwitcherAudioMixer.SwitcherAudioMixerEventTypeProgramOutGainChanged += new SwitcherAudioMixerEventHandler((s, a) => this.Invoke((Action)(() => OnSwitcherAudioMixerEventTypeProgramOutGainChanged(s, a))));//
                 sw.BMDSwitcherAudioMixer.SwitcherAudioMixerEventTypeProgramOutBalanceChanged += new SwitcherAudioMixerEventHandler((s, a) => this.Invoke((Action)(() => OnSwitcherAudioMixerEventTypeProgramOutBalanceChanged(s, a))));//
 
-                sw.BMDSwitcherMixEffectBlock[0].SwitcherMixEffectBlockPropertyIdPreviewInput_v7_5 += new SwitcherMixEffectBlockEventHandler_v7_5((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdPreviewInput(s, a))));//
-                sw.BMDSwitcherMixEffectBlock[0].SwitcherMixEffectBlockPropertyIdProgramInput_v7_5 += new SwitcherMixEffectBlockEventHandler_v7_5((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdProgramInput(s, a))));//
-                sw.BMDSwitcherMixEffectBlock[0].SwitcherMixEffectBlockPropertyIdInTransition_v7_5 += new SwitcherMixEffectBlockEventHandler_v7_5((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdInTransition(s, a))));//
-                sw.BMDSwitcherMixEffectBlock[0].SwitcherMixEffectBlockPropertyIdTransitionPosition_v7_5 += new SwitcherMixEffectBlockEventHandler_v7_5((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdTransitionPosition(s, a))));//
-                sw.BMDSwitcherMixEffectBlock[0].SwitcherMixEffectBlockPropertyIdTransitionFramesRemaining_v7_5 += new SwitcherMixEffectBlockEventHandler_v7_5((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdTransitionFramesRemaining(s, a))));//
-                sw.BMDSwitcherMixEffectBlock[0].SwitcherMixEffectBlockPropertyIdPreviewTransition_v7_5 += new SwitcherMixEffectBlockEventHandler_v7_5((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdPreviewTransition(s, a))));//
-                sw.BMDSwitcherMixEffectBlock[0].SwitcherMixEffectBlockPropertyIdFadeToBlackInTransition_v7_5 += new SwitcherMixEffectBlockEventHandler_v7_5((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdFadeToBlackInTransition(s, a))));//
-                sw.BMDSwitcherMixEffectBlock[0].SwitcherMixEffectBlockPropertyIdFadeToBlackFullyBlack_v7_5 += new SwitcherMixEffectBlockEventHandler_v7_5((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdFadeToBlackFullyBlack(s, a))));//
-                sw.BMDSwitcherMixEffectBlock[0].SwitcherMixEffectBlockPropertyIdFadeToBlackFramesRemaining_v7_5 += new SwitcherMixEffectBlockEventHandler_v7_5((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdFadeToBlackFramesRemaining(s, a))));//
+                sw.BMDSwitcherMixEffectBlock_7_5[0].SwitcherMixEffectBlockPropertyIdPreviewInput_v7_5 += new SwitcherMixEffectBlockEventHandler_v7_5((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdPreviewInput(s, a))));//
+                sw.BMDSwitcherMixEffectBlock_7_5[0].SwitcherMixEffectBlockPropertyIdProgramInput_v7_5 += new SwitcherMixEffectBlockEventHandler_v7_5((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdProgramInput(s, a))));//
+                sw.BMDSwitcherMixEffectBlock_7_5[0].SwitcherMixEffectBlockPropertyIdInTransition_v7_5 += new SwitcherMixEffectBlockEventHandler_v7_5((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdInTransition(s, a))));//
+                sw.BMDSwitcherMixEffectBlock_7_5[0].SwitcherMixEffectBlockPropertyIdTransitionPosition_v7_5 += new SwitcherMixEffectBlockEventHandler_v7_5((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdTransitionPosition(s, a))));//
+                sw.BMDSwitcherMixEffectBlock_7_5[0].SwitcherMixEffectBlockPropertyIdTransitionFramesRemaining_v7_5 += new SwitcherMixEffectBlockEventHandler_v7_5((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdTransitionFramesRemaining(s, a))));//
+                sw.BMDSwitcherMixEffectBlock_7_5[0].SwitcherMixEffectBlockPropertyIdPreviewTransition_v7_5 += new SwitcherMixEffectBlockEventHandler_v7_5((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdPreviewTransition(s, a))));//
+                sw.BMDSwitcherMixEffectBlock_7_5[0].SwitcherMixEffectBlockPropertyIdFadeToBlackInTransition_v7_5 += new SwitcherMixEffectBlockEventHandler_v7_5((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdFadeToBlackInTransition(s, a))));//
+                sw.BMDSwitcherMixEffectBlock_7_5[0].SwitcherMixEffectBlockPropertyIdFadeToBlackFullyBlack_v7_5 += new SwitcherMixEffectBlockEventHandler_v7_5((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdFadeToBlackFullyBlack(s, a))));//
+                sw.BMDSwitcherMixEffectBlock_7_5[0].SwitcherMixEffectBlockPropertyIdFadeToBlackFramesRemaining_v7_5 += new SwitcherMixEffectBlockEventHandler_v7_5((s, a) => this.Invoke((Action)(() => OnSwitcherMixEffectBlockPropertyIdFadeToBlackFramesRemaining(s, a))));//
 
                 for (int i = 0; i < sw.BMDSwitcherKey.Count; i++)
                 {
@@ -177,10 +177,10 @@ namespace ATEM_Switcher_Deluxe
                 sw.BMDSwitcherTransitionParameters.SwitcherTransitionParametersEventTypeTransitionStyleChanged += new SwitcherTransitionParametersEventHandler((s, a) => this.Invoke((Action)(() => OnSwitcherTransitionParametersEventTypeTransitionStyleChanged(s, a))));//
                 sw.BMDSwitcherTransitionParameters.SwitcherTransitionParametersEventTypeNextTransitionStyleChanged += new SwitcherTransitionParametersEventHandler((s, a) => this.Invoke((Action)(() => OnSwitcherTransitionParametersEventTypeNextTransitionStyleChanged(s, a))));//
 
-                OnSwitcherMixEffectBlockPropertyIdPreviewInput(sw.BMDSwitcherMixEffectBlock[0], null);
-                OnSwitcherMixEffectBlockPropertyIdProgramInput(sw.BMDSwitcherMixEffectBlock[0], null);
-                OnSwitcherMixEffectBlockPropertyIdInTransition(sw.BMDSwitcherMixEffectBlock[0], null);
-                OnSwitcherMixEffectBlockPropertyIdTransitionPosition(sw.BMDSwitcherMixEffectBlock[0], null);
+                OnSwitcherMixEffectBlockPropertyIdPreviewInput(sw.BMDSwitcherMixEffectBlock_7_5[0], null);
+                OnSwitcherMixEffectBlockPropertyIdProgramInput(sw.BMDSwitcherMixEffectBlock_7_5[0], null);
+                OnSwitcherMixEffectBlockPropertyIdInTransition(sw.BMDSwitcherMixEffectBlock_7_5[0], null);
+                OnSwitcherMixEffectBlockPropertyIdTransitionPosition(sw.BMDSwitcherMixEffectBlock_7_5[0], null);
 
                 for (int i = 0; i < sw.BMDSwitcherKey.Count; i++)
                 {
@@ -195,10 +195,10 @@ namespace ATEM_Switcher_Deluxe
                     OnSwitcherDownstreamKeyEventTypeFramesRemainingChanged(sw.BMDSwitcherDownstreamKey[i], null);
                 }
 
-                OnSwitcherMixEffectBlockPropertyIdPreviewTransition(sw.BMDSwitcherMixEffectBlock[0], null);
-                OnSwitcherMixEffectBlockPropertyIdFadeToBlackInTransition(sw.BMDSwitcherMixEffectBlock[0], null);
-                OnSwitcherMixEffectBlockPropertyIdFadeToBlackFullyBlack(sw.BMDSwitcherMixEffectBlock[0], null);
-                OnSwitcherMixEffectBlockPropertyIdFadeToBlackFramesRemaining(sw.BMDSwitcherMixEffectBlock[0], null);
+                OnSwitcherMixEffectBlockPropertyIdPreviewTransition(sw.BMDSwitcherMixEffectBlock_7_5[0], null);
+                OnSwitcherMixEffectBlockPropertyIdFadeToBlackInTransition(sw.BMDSwitcherMixEffectBlock_7_5[0], null);
+                OnSwitcherMixEffectBlockPropertyIdFadeToBlackFullyBlack(sw.BMDSwitcherMixEffectBlock_7_5[0], null);
+                OnSwitcherMixEffectBlockPropertyIdFadeToBlackFramesRemaining(sw.BMDSwitcherMixEffectBlock_7_5[0], null);
                 OnSwitcherTransitionParametersEventTypeTransitionStyleChanged(sw.BMDSwitcherTransitionParameters, null);
                 OnSwitcherTransitionParametersEventTypeNextTransitionStyleChanged(sw.BMDSwitcherTransitionParameters, null);
 
@@ -323,8 +323,8 @@ namespace ATEM_Switcher_Deluxe
             {
                 // Leave Audio modes
                 case 0:
-                    this.midi_BCF2000.MIDI_Send(ChannelCommand.NoteOn, 0, 0, 40 + (int)sw.BMDSwitcherMixEffectBlock[0].GetInt(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdPreviewInput_v7_5), 1);
-                    this.midi_BCF2000.MIDI_Send(ChannelCommand.NoteOn, 0, 0, 32 + (int)sw.BMDSwitcherMixEffectBlock[0].GetInt(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdProgramInput_v7_5), 1);
+                    this.midi_BCF2000.MIDI_Send(ChannelCommand.NoteOn, 0, 0, 40 + (int)sw.BMDSwitcherMixEffectBlock_7_5[0].GetInt(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdPreviewInput_v7_5), 1);
+                    this.midi_BCF2000.MIDI_Send(ChannelCommand.NoteOn, 0, 0, 32 + (int)sw.BMDSwitcherMixEffectBlock_7_5[0].GetInt(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdProgramInput_v7_5), 1);
                     break;
 
                 case 1:
@@ -360,7 +360,7 @@ namespace ATEM_Switcher_Deluxe
             double position = ((float)(a.FaderF1) / 127 * 100) / 100.0;
             if (m_moveSliderDownwards)
                 position = (100 - ((float)(a.FaderF1) / 127 * 100)) / 100.0;
-            sw.BMDSwitcherMixEffectBlock[0].SetFloat(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdTransitionPosition_v7_5, position);
+            sw.BMDSwitcherMixEffectBlock_7_5[0].SetFloat(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdTransitionPosition_v7_5, position);
         }
 
         #region Switcher Events
@@ -1328,7 +1328,7 @@ namespace ATEM_Switcher_Deluxe
             double position = trackBarTransitionPosTBar.Value / 100.0;
             if (m_moveSliderDownwards)
                 position = (100 - trackBarTransitionPosTBar.Value) / 100.0;
-            sw.BMDSwitcherMixEffectBlock[0].SetFloat(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdTransitionPosition_v7_5, position);
+            sw.BMDSwitcherMixEffectBlock_7_5[0].SetFloat(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdTransitionPosition_v7_5, position);
         }
         #endregion
 

@@ -47,7 +47,7 @@ namespace BMDSwitcherLib
 		private IBMDSwitcherInput m_switcherInput;
 		private IBMDSwitcherInputAux m_switcherInputAux;
 		private IBMDSwitcherInputColor m_switcherInputColor;
-		private IBMDSwitcherInputSuperSource m_switcherInputSuperSource;
+		private IBMDSwitcherInputSuperSource_v7_5_2 m_switcherInputSuperSource_v7_5_2;
 		private IBMDSwitcherKey m_switcherKey;
 		private IBMDSwitcherKeyChromaParameters m_switcherKeyChromaParameters;
 		private IBMDSwitcherKeyDVEParameters m_switcherKeyDVEParameters;
@@ -58,9 +58,9 @@ namespace BMDSwitcherLib
 		private IBMDSwitcherMacroPool m_switcherMacroPool;
 		private IBMDSwitcherMediaPlayer m_switcherMediaPlayer;
 		private IBMDSwitcherMediaPool m_switcherMediaPool;
-		private IBMDSwitcherMixEffectBlock_v7_5 m_switcherMixEffectBlock; 
+		private IBMDSwitcherMixEffectBlock_v7_5 m_switcherMixEffectBlock_v7_5; 
 		private IBMDSwitcherMixMinusOutput m_switcherMixMinusOutput;
-		private IBMDSwitcherMultiView m_switcherMultiView;
+		private IBMDSwitcherMultiView_v7_5_2 m_switcherMultiView_v7_5_2;
 		private IBMDSwitcherStills m_switcherStills;
 		private IBMDSwitcherTransitionDipParameters m_switcherTransitionDipParameters;
 		private IBMDSwitcherTransitionDVEParameters m_switcherTransitionDVEParameters;
@@ -100,11 +100,13 @@ namespace BMDSwitcherLib
 		public List<SwitcherDownstreamKeyCallback> BMDSwitcherDownstreamKey = new List<SwitcherDownstreamKeyCallback>();
 		public List<SwitcherInputAuxCallback> BMDSwitcherInputAux = new List<SwitcherInputAuxCallback>();
 		public List<SwitcherInputCallback> BMDSwitcherInput = new List<SwitcherInputCallback>();
-		public List<SwitcherKeyCallback> BMDSwitcherKey = new List<SwitcherKeyCallback>();
-		public List<SwitcherMixEffectBlockCallback_v7_5> BMDSwitcherMixEffectBlock = new List<SwitcherMixEffectBlockCallback_v7_5>();
+        public List<SwitcherInputSuperSourceCallback_v7_5_2> BMDSwitcherInputSuperSource_v7_5_2 = new List<SwitcherInputSuperSourceCallback_v7_5_2>();
+        public List<SwitcherKeyCallback> BMDSwitcherKey = new List<SwitcherKeyCallback>();
+		public List<SwitcherMixEffectBlockCallback_v7_5> BMDSwitcherMixEffectBlock_7_5 = new List<SwitcherMixEffectBlockCallback_v7_5>();
         public List<SwitcherMediaPlayerCallback> BMDSwitcherMediaPlayer = new List<SwitcherMediaPlayerCallback>();
         public SwitcherStillsCallback BMDSwitcherStills;
         public List<SwitcherStill> BMDSwitcherStill = new List<SwitcherStill>();
+        public List<SwitcherMultiViewCallback> BMDSwitcherMultiView = new List<SwitcherMultiViewCallback>();
         public List<SwitcherInputColorCallback> BMDSwitcherInputColor = new List<SwitcherInputColorCallback>();
         public List<SwitcherKeyChromaParametersCallback> BMDSwitcherKeyChromaParameters = new List<SwitcherKeyChromaParametersCallback>();
         public List<SwitcherKeyLumaParametersCallback> BMDSwitcherKeyLumaParameters = new List<SwitcherKeyLumaParametersCallback>();
@@ -289,14 +291,12 @@ namespace BMDSwitcherLib
                         #endregion
 
                         #region SwitcherPortTypeSuperSource
-                        /*
                         case _BMDSwitcherPortType.bmdSwitcherPortTypeSuperSource:
-                            this.m_switcherInputSuperSource = (IBMDSwitcherInputSuperSource)this.m_switcherInput;
-                            SwitcherInputSuperSourceCallback switcherInputSuperSourceCallback = new SwitcherInputSuperSourceCallback(this.m_switcherInputSuperSource, this.BMDSwitcherInfo.TotalSwitcherPortTypeSuperSource);
-                            this.BMDSwitcherInputSuperSource.Add(switcherInputSuperSourceCallback);
-                            this.BMDSwitcherInfo.TotalSwitcherPortTypeSuperSource++;
+                            this.m_switcherInputSuperSource_v7_5_2 = (IBMDSwitcherInputSuperSource_v7_5_2)this.m_switcherInput;
+                            SwitcherInputSuperSourceCallback_v7_5_2 switcherInputSuperSourceCallback_v7_5_2 = new SwitcherInputSuperSourceCallback_v7_5_2(this.m_switcherInputSuperSource_v7_5_2, this.BMDSwitcherInfo.TotalSwitcherPortTypeSuperSource_v7_5_2);
+                            this.BMDSwitcherInputSuperSource_v7_5_2.Add(switcherInputSuperSourceCallback_v7_5_2);
+                            this.BMDSwitcherInfo.TotalSwitcherPortTypeSuperSource_v7_5_2++;
                             break;
-                        */
                        #endregion
                     }
                     SwitcherInputIterator.Next(out this.m_switcherInput);
@@ -306,29 +306,29 @@ namespace BMDSwitcherLib
             #endregion
 
             #region SwitcherMixEffectBlock
-            IBMDSwitcherMixEffectBlockIterator_v7_5 SwitcherMixEffectBlockIterator = null;
-            Guid SwitcherMixEffectBlockIteratorIID = typeof(IBMDSwitcherMixEffectBlockIterator_v7_5).GUID;
+            IBMDSwitcherMixEffectBlockIterator_v7_5 SwitcherMixEffectBlockIterator_v7_5 = null;
+            Guid SwitcherMixEffectBlockIteratorIID_v7_5 = typeof(IBMDSwitcherMixEffectBlockIterator_v7_5).GUID;
 
             IBMDSwitcherKeyIterator SwitcherKeyIterator = null;
             Guid SwitcherKeyIteratorIID = typeof(IBMDSwitcherKeyIterator).GUID;
 
-            this.m_switcher.CreateIterator(ref SwitcherMixEffectBlockIteratorIID, out IntPtr SwitcherMixEffectBlockIteratorintPtr);
-            SwitcherMixEffectBlockIterator = (IBMDSwitcherMixEffectBlockIterator_v7_5)Marshal.GetObjectForIUnknown(SwitcherMixEffectBlockIteratorintPtr);
+            this.m_switcher.CreateIterator(ref SwitcherMixEffectBlockIteratorIID_v7_5, out IntPtr SwitcherMixEffectBlockIteratorintPtr);
+            SwitcherMixEffectBlockIterator_v7_5 = (IBMDSwitcherMixEffectBlockIterator_v7_5)Marshal.GetObjectForIUnknown(SwitcherMixEffectBlockIteratorintPtr);
 
-            if (SwitcherMixEffectBlockIterator != null)
+            if (SwitcherMixEffectBlockIterator_v7_5 != null)
             {
-                SwitcherMixEffectBlockIterator.Next(out this.m_switcherMixEffectBlock);
+                SwitcherMixEffectBlockIterator_v7_5.Next(out this.m_switcherMixEffectBlock_v7_5);
 
-                while (this.m_switcherMixEffectBlock != null)
+                while (this.m_switcherMixEffectBlock_v7_5 != null)
                 {
                     #region SwitcherTransitionParameters
-                    this.m_switcherTransitionParameters = (IBMDSwitcherTransitionParameters)this.m_switcherMixEffectBlock;
+                    this.m_switcherTransitionParameters = (IBMDSwitcherTransitionParameters)this.m_switcherMixEffectBlock_v7_5;
                     this.BMDSwitcherTransitionParameters = new SwitcherTransitionParametersCallback(this.m_switcherTransitionParameters);
                     this.m_switcherTransitionParameters.AddCallback(this.BMDSwitcherTransitionParameters);
                     #endregion
 
                     #region SwitcherTransitionDipParameters
-                    this.m_switcherTransitionDipParameters = (IBMDSwitcherTransitionDipParameters)this.m_switcherMixEffectBlock;
+                    this.m_switcherTransitionDipParameters = (IBMDSwitcherTransitionDipParameters)this.m_switcherMixEffectBlock_v7_5;
                     this.BMDSwitcherTransitionDipParameters = new SwitcherTransitionDipParametersCallback(this.m_switcherTransitionDipParameters);
                     this.m_switcherTransitionDipParameters.AddCallback(this.BMDSwitcherTransitionDipParameters);
                     #endregion
@@ -336,7 +336,7 @@ namespace BMDSwitcherLib
                     #region SwitcherTransitionDVEParameters
                     try
                     {
-                        this.m_switcherTransitionDVEParameters = (IBMDSwitcherTransitionDVEParameters)this.m_switcherMixEffectBlock;
+                        this.m_switcherTransitionDVEParameters = (IBMDSwitcherTransitionDVEParameters)this.m_switcherMixEffectBlock_v7_5;
                         this.BMDSwitcherTransitionDVEParameters = new SwitcherTransitionDVEParametersCallback(this.m_switcherTransitionDVEParameters);
                         this.m_switcherTransitionDVEParameters.AddCallback(this.BMDSwitcherTransitionDVEParameters);
                     }
@@ -344,7 +344,7 @@ namespace BMDSwitcherLib
                     #endregion
 
                     #region SwitcherTransitionMixParameters
-                    this.m_switcherTransitionMixParameters = (IBMDSwitcherTransitionMixParameters)this.m_switcherMixEffectBlock;
+                    this.m_switcherTransitionMixParameters = (IBMDSwitcherTransitionMixParameters)this.m_switcherMixEffectBlock_v7_5;
                     this.BMDSwitcherTransitionMixParameters = new SwitcherTransitionMixParametersCallback(this.m_switcherTransitionMixParameters);
                     this.m_switcherTransitionMixParameters.AddCallback(this.BMDSwitcherTransitionMixParameters);
                     #endregion
@@ -352,7 +352,7 @@ namespace BMDSwitcherLib
                     #region SwitcherTransitionStingerParameters
                     try
                     {
-                        this.m_switcherTransitionStingerParameters = (IBMDSwitcherTransitionStingerParameters)this.m_switcherMixEffectBlock;
+                        this.m_switcherTransitionStingerParameters = (IBMDSwitcherTransitionStingerParameters)this.m_switcherMixEffectBlock_v7_5;
                         this.BMDSwitcherTransitionStingerParameters = new SwitcherTransitionStingerParametersCallback(this.m_switcherTransitionStingerParameters);
                         this.m_switcherTransitionStingerParameters.AddCallback(this.BMDSwitcherTransitionStingerParameters);
                     }
@@ -360,16 +360,16 @@ namespace BMDSwitcherLib
                     #endregion
 
                     #region SwitcherTransitionWipeParameters
-                    this.m_switcherTransitionWipeParameters = (IBMDSwitcherTransitionWipeParameters)this.m_switcherMixEffectBlock;
+                    this.m_switcherTransitionWipeParameters = (IBMDSwitcherTransitionWipeParameters)this.m_switcherMixEffectBlock_v7_5;
                     this.BMDSwitcherTransitionWipeParameters = new SwitcherTransitionWipeParametersCallback(this.m_switcherTransitionWipeParameters);
                     this.m_switcherTransitionWipeParameters.AddCallback(this.BMDSwitcherTransitionWipeParameters);
                     #endregion
 
-                    SwitcherMixEffectBlockCallback_v7_5 switcherMixEffectBlockCallback = new SwitcherMixEffectBlockCallback_v7_5(this.m_switcherMixEffectBlock, this.BMDSwitcherInfo.TotalSwitcherMixEffectBlock);
-                    this.m_switcherMixEffectBlock.AddCallback(switcherMixEffectBlockCallback);
-                    this.BMDSwitcherMixEffectBlock.Add(switcherMixEffectBlockCallback);
+                    SwitcherMixEffectBlockCallback_v7_5 switcherMixEffectBlockCallback_v7_5 = new SwitcherMixEffectBlockCallback_v7_5(this.m_switcherMixEffectBlock_v7_5, this.BMDSwitcherInfo.TotalSwitcherMixEffectBlock_v7_5);
+                    this.m_switcherMixEffectBlock_v7_5.AddCallback(switcherMixEffectBlockCallback_v7_5);
+                    this.BMDSwitcherMixEffectBlock_7_5.Add(switcherMixEffectBlockCallback_v7_5);
 
-                    this.m_switcherMixEffectBlock.CreateIterator(ref SwitcherKeyIteratorIID, out IntPtr SwitcherKeyIteratorintPtr);
+                    this.m_switcherMixEffectBlock_v7_5.CreateIterator(ref SwitcherKeyIteratorIID, out IntPtr SwitcherKeyIteratorintPtr);
                     SwitcherKeyIterator = (IBMDSwitcherKeyIterator)Marshal.GetObjectForIUnknown(SwitcherKeyIteratorintPtr);
                     if (SwitcherKeyIterator != null)
                     {
@@ -433,8 +433,8 @@ namespace BMDSwitcherLib
                             this.BMDSwitcherInfo.TotalSwitcherKey++;
                         }
                     }
-                    SwitcherMixEffectBlockIterator.Next(out this.m_switcherMixEffectBlock);
-                    this.BMDSwitcherInfo.TotalSwitcherMixEffectBlock++;
+                    SwitcherMixEffectBlockIterator_v7_5.Next(out this.m_switcherMixEffectBlock_v7_5);
+                    this.BMDSwitcherInfo.TotalSwitcherMixEffectBlock_v7_5++;
                 }
             }
             #endregion
@@ -520,25 +520,23 @@ namespace BMDSwitcherLib
             #endregion
 
             #region SwitcherMultiView
-            /*
-            IBMDSwitcherMultiViewIterator SwitcherMultiViewIterator = null;
-            Guid SwitcherMultiViewIteratorIID = typeof(IBMDSwitcherMultiViewIterator).GUID;
-            this.m_switcher.CreateIterator(ref SwitcherMultiViewIteratorIID, out IntPtr SwitcherMultiViewIteratorintPtr);
-            SwitcherMultiViewIterator = (IBMDSwitcherMultiViewIterator)Marshal.GetObjectForIUnknown(SwitcherMultiViewIteratorintPtr);
+            IBMDSwitcherMultiViewIterator_v7_5_2 SwitcherMultiViewIterator_v7_5_2 = null;
+            Guid SwitcherMultiViewIteratorIID_v7_5_2 = typeof(IBMDSwitcherMultiViewIterator_v7_5_2).GUID;
+            this.m_switcher.CreateIterator(ref SwitcherMultiViewIteratorIID_v7_5_2, out IntPtr SwitcherMultiViewIteratorintPtr_v7_5_2);
+            SwitcherMultiViewIterator_v7_5_2 = (IBMDSwitcherMultiViewIterator_v7_5_2)Marshal.GetObjectForIUnknown(SwitcherMultiViewIteratorintPtr_v7_5_2);
 
-            if (SwitcherMultiViewIterator != null)
+            if (SwitcherMultiViewIterator_v7_5_2 != null)
             {
-                SwitcherMultiViewIterator.Next(out m_switcherMultiView);
-                while (this.m_switcherMultiView != null)
+                SwitcherMultiViewIterator_v7_5_2.Next(out m_switcherMultiView_v7_5_2);
+                while (this.m_switcherMultiView_v7_5_2 != null)
                 {
-                    SwitcherMultiViewCallback switcherMultiViewCallback = new SwitcherMultiViewCallback(this.m_switcherMultiView, this.BMDSwitcherInfo.TotalSwitcherMultiView);
-                    this.m_switcherMultiView.AddCallback(switcherMultiViewCallback);
+                    SwitcherMultiViewCallback switcherMultiViewCallback = new SwitcherMultiViewCallback(this.m_switcherMultiView_v7_5_2, this.BMDSwitcherInfo.TotalSwitcherMultiView);
+                    this.m_switcherMultiView_v7_5_2.AddCallback(switcherMultiViewCallback);
                     this.BMDSwitcherMultiView.Add(switcherMultiViewCallback);
-                    SwitcherMultiViewIterator.Next(out m_switcherMultiView);
+                    SwitcherMultiViewIterator_v7_5_2.Next(out m_switcherMultiView_v7_5_2);
                     this.BMDSwitcherInfo.TotalSwitcherMultiView++;
                 }
             }
-            */
             #endregion
         }
         public void Disconnect()
@@ -576,13 +574,13 @@ namespace BMDSwitcherLib
                         switch (args[1].ToLower().Trim())
                         {
                             case "cut":
-                                this.BMDSwitcherMixEffectBlock[0].PerformCut();
+                                this.BMDSwitcherMixEffectBlock_7_5[0].PerformCut();
                                 break;
                             case "autotransition":
-                                this.BMDSwitcherMixEffectBlock[0].PerformAutoTransition();
+                                this.BMDSwitcherMixEffectBlock_7_5[0].PerformAutoTransition();
                                 break;
                             case "fadetoblack":
-                                this.BMDSwitcherMixEffectBlock[0].PerformFadeToBlack();
+                                this.BMDSwitcherMixEffectBlock_7_5[0].PerformFadeToBlack();
                                 break;
                         }
                         break;
@@ -590,13 +588,13 @@ namespace BMDSwitcherLib
 
                     #region ProgramInput | <nr>
                     case "programinput":
-                        this.BMDSwitcherMixEffectBlock[0].SetInt(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdProgramInput_v7_5, Int32.Parse(args[1]));
+                        this.BMDSwitcherMixEffectBlock_7_5[0].SetInt(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdProgramInput_v7_5, Int32.Parse(args[1]));
                         break;
                     #endregion
 
                     #region PreviewInput | <nr>
                     case "previewinput":
-                        this.BMDSwitcherMixEffectBlock[0].SetInt(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdPreviewInput_v7_5, Int32.Parse(args[1]));
+                        this.BMDSwitcherMixEffectBlock_7_5[0].SetInt(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdPreviewInput_v7_5, Int32.Parse(args[1]));
                         break;
                     #endregion
 
@@ -714,17 +712,17 @@ namespace BMDSwitcherLib
 
                     #region PreviewTransition
                     case "previewtransition":
-                        this.BMDSwitcherMixEffectBlock[0].SetFlag(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdPreviewTransition_v7_5, this.BMDSwitcherMixEffectBlock[0].GetFlag(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdPreviewTransition_v7_5) == 0 ? 1 : 0);
+                        this.BMDSwitcherMixEffectBlock_7_5[0].SetFlag(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdPreviewTransition_v7_5, this.BMDSwitcherMixEffectBlock_7_5[0].GetFlag(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdPreviewTransition_v7_5) == 0 ? 1 : 0);
                         break;
                     #endregion
                     #region PreviewTransitionOn
                     case "previewtransitionon":
-                        this.BMDSwitcherMixEffectBlock[0].SetFlag(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdPreviewTransition_v7_5, 1);
+                        this.BMDSwitcherMixEffectBlock_7_5[0].SetFlag(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdPreviewTransition_v7_5, 1);
                         break;
                     #endregion
                     #region PreviewTransitionOff
                     case "previewtransitionoff":
-                        this.BMDSwitcherMixEffectBlock[0].SetFlag(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdPreviewTransition_v7_5, 0);
+                        this.BMDSwitcherMixEffectBlock_7_5[0].SetFlag(BMDSwitcherAPI._BMDSwitcherMixEffectBlockPropertyId_v7_5.bmdSwitcherMixEffectBlockPropertyIdPreviewTransition_v7_5, 0);
                         break;
                     #endregion
 

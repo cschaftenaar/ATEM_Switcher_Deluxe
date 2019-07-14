@@ -48,13 +48,13 @@ namespace BMDSwitcherLib
     public class SwitcherCallback : IBMDSwitcherCallback
     {
         // Events:
-        public event SwitcherEventHandler Switcher3GSDIOutputLevelChanged;
-        public event SwitcherEventHandler SwitcherDisconnected;
-        public event SwitcherEventHandler SwitcherDownConvertedHDVideoModeChanged;
-        public event SwitcherEventHandler SwitcherMethodForDownConvertedSDChanged;
-        public event SwitcherEventHandler SwitcherMultiViewVideoModeChanged;
-        public event SwitcherEventHandler SwitcherPowerStatusChanged;
-        public event SwitcherEventHandler SwitcherVideoModeChanged;
+        public event SwitcherEventHandler SwitcherEventType3GSDIOutputLevelChanged;
+        public event SwitcherEventHandler SwitcherEventTypeDisconnected;
+        public event SwitcherEventHandler SwitcherEventTypeDownConvertedHDVideoModeChanged;
+        public event SwitcherEventHandler SwitcherEventTypeMethodForDownConvertedSDChanged;
+        public event SwitcherEventHandler SwitcherEventTypeMultiViewVideoModeChanged;
+        public event SwitcherEventHandler SwitcherEventTypePowerStatusChanged;
+        public event SwitcherEventHandler SwitcherEventTypeVideoModeChanged;
 
         private SwitcherEventArgs _switcherEventArgs;
 
@@ -70,26 +70,26 @@ namespace BMDSwitcherLib
             switch (eventType)
             {
                 case _BMDSwitcherEventType.bmdSwitcherEventType3GSDIOutputLevelChanged:
-                    this.Switcher3GSDIOutputLevelChanged?.Invoke(this, this._switcherEventArgs);
+                    this.SwitcherEventType3GSDIOutputLevelChanged?.Invoke(this, this._switcherEventArgs);
                     break;
                 case _BMDSwitcherEventType.bmdSwitcherEventTypeDisconnected:
                     this._switcherEventArgs = new SwitcherEventArgs { _coreVideoMode = coreVideoMode };
-                    this.SwitcherDisconnected?.Invoke(this, this._switcherEventArgs);
+                    this.SwitcherEventTypeDisconnected?.Invoke(this, this._switcherEventArgs);
                     break;
                 case _BMDSwitcherEventType.bmdSwitcherEventTypeDownConvertedHDVideoModeChanged:
-                    this.SwitcherDownConvertedHDVideoModeChanged?.Invoke(this, this._switcherEventArgs);
+                    this.SwitcherEventTypeDownConvertedHDVideoModeChanged?.Invoke(this, this._switcherEventArgs);
                     break;
                 case _BMDSwitcherEventType.bmdSwitcherEventTypeMethodForDownConvertedSDChanged:
-                    this.SwitcherMethodForDownConvertedSDChanged?.Invoke(this, this._switcherEventArgs);
+                    this.SwitcherEventTypeMethodForDownConvertedSDChanged?.Invoke(this, this._switcherEventArgs);
                     break;
                 case _BMDSwitcherEventType.bmdSwitcherEventTypeMultiViewVideoModeChanged:
-                    this.SwitcherMultiViewVideoModeChanged?.Invoke(this, this._switcherEventArgs);
+                    this.SwitcherEventTypeMultiViewVideoModeChanged?.Invoke(this, this._switcherEventArgs);
                     break;
                 case _BMDSwitcherEventType.bmdSwitcherEventTypePowerStatusChanged:
-                    this.SwitcherPowerStatusChanged?.Invoke(this, this._switcherEventArgs);
+                    this.SwitcherEventTypePowerStatusChanged?.Invoke(this, this._switcherEventArgs);
                     break;
                 case _BMDSwitcherEventType.bmdSwitcherEventTypeVideoModeChanged:
-                    this.SwitcherVideoModeChanged?.Invoke(this, this._switcherEventArgs);
+                    this.SwitcherEventTypeVideoModeChanged?.Invoke(this, this._switcherEventArgs);
                     break;
             }
         }

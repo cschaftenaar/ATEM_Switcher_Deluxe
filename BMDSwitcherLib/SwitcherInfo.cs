@@ -51,8 +51,8 @@ namespace BMDSwitcherLib
         public int TotalSwitcherPortTypeMixEffectBlockOutput;
         public int TotalSwitcherPortTypeAuxOutput;
         public int TotalSwitcherPortTypeColorGenerator;
-        public int TotalSwitcherPortTypeSuperSource;
-        public int TotalSwitcherMixEffectBlock;
+        public int TotalSwitcherPortTypeSuperSource_v7_5_2;
+        public int TotalSwitcherMixEffectBlock_v7_5;
         public int TotalSwitcherKey;
         public int TotalSwitcherDownstreamKey;
         public int TotalSwitcherAudioInput;

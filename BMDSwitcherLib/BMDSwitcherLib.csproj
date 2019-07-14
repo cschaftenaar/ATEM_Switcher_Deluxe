@@ -83,6 +83,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SwitcherInputSuperSourceCallback_v7_5_2.cs" />
     <Compile Include="SwitcherMacro.cs" />
     <Compile Include="SwitcherInfo.cs" />
     <Compile Include="Switcher.cs" />
@@ -95,6 +96,7 @@
     <Compile Include="SwitcherEnums.cs" />
     <Compile Include="SwitcherKeyFlyKeyFrameParametersCallback.cs" />
     <Compile Include="SwitcherKeyFlyParametersCallback.cs" />
+    <Compile Include="SwitcherMixEffectBlockCallback_v7_5.cs" />
     <Compile Include="SwitcherMixMinusOutputCallback.cs" />
     <Compile Include="SwitcherMacroPoolCallback.cs" />
     <Compile Include="SwitcherKeyDVEParametersCallback.cs" />
@@ -107,6 +109,7 @@
     <Compile Include="SwitcherAudioMixerCallback.cs" />
     <Compile Include="SwitcherAudioMonitorOutputCallback.cs" />
     <Compile Include="SwitcherCallback.cs" />
+    <Compile Include="SwitcherMultiViewCallback.cs" />
     <Compile Include="SwitcherStillUpload.cs" />
     <Compile Include="SwitcherStillLockCallback.cs" />
     <Compile Include="SwitcherStill.cs" />
