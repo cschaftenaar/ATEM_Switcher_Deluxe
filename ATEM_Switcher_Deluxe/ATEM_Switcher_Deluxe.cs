@@ -58,7 +58,9 @@ namespace ATEM_Switcher_Deluxe
 
         public Switcher sw;
         public XKeys_Controller XKeys;
+
         public BCF2000_MIDI_Controller midi_BCF2000;
+        public iCON_MIDI_iPad_Controller midi_iCON_iPAD;
 
         //ChannelMessageEventArgs BCF2000_Messages;
                
@@ -82,6 +84,16 @@ namespace ATEM_Switcher_Deluxe
                     MessageBox.Show("Error : No Devices Found!", "X-Keys ERROR", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 }
 
+                #endregion
+                
+                #region MIDI iCON
+                midi_iCON_iPAD = new iCON_MIDI_iPad_Controller(this);
+                midi_iCON_iPAD.OnButton += new MIDI_iCON_iPad_EventHandler((s, a) => this.Invoke((Action)(() => OnButton(s, a))));
+                midi_iCON_iPAD.OnFaderF1 += new MIDI_iCON_iPad_EventHandler((s, a) => this.Invoke((Action)(() => OnFaderF1(s, a))));
+                midi_iCON_iPAD.OnTouchpad += new MIDI_iCON_iPad_EventHandler((s, a) => this.Invoke((Action)(() => OnTouchpad(s, a))));
+
+                midi_iCON_iPAD.Connect();
+                midi_iCON_iPAD.StartRecording();
                 #endregion
                 #region MIDI BCF2000
                 midi_BCF2000 = new BCF2000_MIDI_Controller(this);
@@ -116,6 +128,12 @@ namespace ATEM_Switcher_Deluxe
 
                     midi_BCF2000.Connect();
                     midi_BCF2000.StartRecording();
+
+                    // Reset Buttons
+                    for (int i = 1; i <= 64; i++)
+                    {
+                        midi_BCF2000.MIDI_Send(ChannelCommand.NoteOn, 0, 0, i, 0);
+                    }
                 }
                 else
                 {
@@ -124,6 +142,7 @@ namespace ATEM_Switcher_Deluxe
                 }
                 #endregion
 
+                #region BMD Switcher
                 BMDSwitcherLib.DeviceForm dev = new BMDSwitcherLib.DeviceForm()
                 {
                     DeviceAddress = "192.168.1.200"
@@ -132,15 +151,6 @@ namespace ATEM_Switcher_Deluxe
                 sw = new Switcher(dev.DeviceAddress);
                 sw.Discover();
                 sw.Connect();
-
-                // Reset Buttons
-                if (existMIDI)
-                {
-                    for (int i = 1; i <= 64; i++)
-                    {
-                        midi_BCF2000.MIDI_Send(ChannelCommand.NoteOn, 0, 0, i, 0);
-                    }
-                }
 
                 for (int i = 0; i < sw.BMDSwitcherAudioInput.Count; i++)
                 {
@@ -208,7 +218,7 @@ namespace ATEM_Switcher_Deluxe
                 OnSwitcherAudioMixerEventTypeProgramOutGainChanged(sw.BMDSwitcherAudioMixer, null);
                 GroupBoxPreset2_Enter(this, null);
                 GroupBoxPreset1_Enter(this, null);
-
+                #endregion
             }));
             base.OnLoad(e);
         }
@@ -354,6 +364,85 @@ namespace ATEM_Switcher_Deluxe
         {
             textBoxX.Text = a.TouchPadX.ToString();
             textBoxY.Text = a.TouchPadY.ToString();
+        }
+        private void OnButton(object s, iCON_MIDI_iPad_EventArgs a)
+        {
+            buttoniCON1.ImageIndex = (long)(a.ButtonNr & (long)iCONButtons.iCONButtonP1) > 0 ? 2 : 0;
+            buttoniCON2.ImageIndex = (long)(a.ButtonNr & (long)iCONButtons.iCONButtonP2) > 0 ? 2 : 0;
+            buttoniCON3.ImageIndex = (long)(a.ButtonNr & (long)iCONButtons.iCONButtonP3) > 0 ? 2 : 0;
+            buttoniCON4.ImageIndex = (long)(a.ButtonNr & (long)iCONButtons.iCONButtonP4) > 0 ? 2 : 0;
+            buttoniCON5.ImageIndex = (long)(a.ButtonNr & (long)iCONButtons.iCONButtonP5) > 0 ? 2 : 0;
+            buttoniCON6.ImageIndex = (long)(a.ButtonNr & (long)iCONButtons.iCONButtonP6) > 0 ? 2 : 0;
+            buttoniCON7.ImageIndex = (long)(a.ButtonNr & (long)iCONButtons.iCONButtonP7) > 0 ? 2 : 0;
+            buttoniCON8.ImageIndex = (long)(a.ButtonNr & (long)iCONButtons.iCONButtonP8) > 0 ? 2 : 0;
+            buttoniCON9.ImageIndex = (long)(a.ButtonNr & (long)iCONButtons.iCONButtonP9) > 0 ? 2 : 0;
+            buttoniCON10.ImageIndex = (long)(a.ButtonNr & (long)iCONButtons.iCONButtonP10) > 0 ? 2 : 0;
+            buttoniCON11.ImageIndex = (long)(a.ButtonNr & (long)iCONButtons.iCONButtonP11) > 0 ? 2 : 0;
+            buttoniCON12.ImageIndex = (long)(a.ButtonNr & (long)iCONButtons.iCONButtonP12) > 0 ? 2 : 0;
+
+            switch (a.Preset)
+            {
+                case 1:
+                    switch (a.ButtonNr)
+                    {
+                        case (long)BMDMidiLib.iCONButtons.iCONButtonP1:
+                            //MXLightSocket.StreamOn();
+                            break;
+                        case (long)BMDMidiLib.iCONButtons.iCONButtonP7:
+                            //MXLightSocket.StreamOff();
+                            break;
+
+                        case (long)BMDMidiLib.iCONButtons.iCONButtonP2:
+                            //MXLightSocket.PreviewOn();
+                            break;
+                        case (long)BMDMidiLib.iCONButtons.iCONButtonP8:
+                            //MXLightSocket.PreviewOff();
+                            break;
+
+                        case (long)BMDMidiLib.iCONButtons.iCONButtonP3:
+                            //MXLightSocket.RecordOn();
+                            break;
+                        case (long)BMDMidiLib.iCONButtons.iCONButtonP9:
+                            //MXLightSocket.RecordOff();
+                            break;
+
+                        case (long)BMDMidiLib.iCONButtons.iCONButtonP12:
+                            //MXLightSocket.Disconnect();
+                            //MXLightSocket.Restart();
+                            //MXLightSocket.Connect();
+                            break;
+                    }
+                    break;
+
+                case 2:
+                    switch (a.ButtonNr)
+                    {
+                        case (long)BMDMidiLib.iCONButtons.iCONButtonP1:
+                            //MXLightSocket.ReplayAddCue("test");
+                            break;
+                        case (long)BMDMidiLib.iCONButtons.iCONButtonP2:
+                            //MXLightSocket.ReplayPlayLastCue();
+                            break;
+
+                        case (long)BMDMidiLib.iCONButtons.iCONButtonP5:
+                            //MXLightSocket.ReplayStop();
+                            break;
+
+                        case (long)BMDMidiLib.iCONButtons.iCONButtonP6:
+                            //MXLightSocket.ReplaySpeed(0.5);
+                            break;
+                        case (long)BMDMidiLib.iCONButtons.iCONButtonP12:
+                            //MXLightSocket.ReplaySpeed(1);
+                            break;
+                    }
+                    break;
+
+                case 3:
+                    break;
+
+                case 4:
+                    break;
+            }
         }
         private void OnFaderF1(object s, iCON_MIDI_iPad_EventArgs a)
         {
